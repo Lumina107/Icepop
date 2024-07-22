@@ -6,10 +6,8 @@ export default function Preloader() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    window.onload = () => {
       window.scrollTo(0, 0);
       setLoading(true);
-    };
     setTimeout(() => {
       setLoading(false);
     }, 4000);
