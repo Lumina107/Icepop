@@ -36,6 +36,7 @@ export default function Faq() {
           <video
             className="absolute"
             autoPlay={"autoplay"}
+            playsInline
             muted
             loop
             height={640}

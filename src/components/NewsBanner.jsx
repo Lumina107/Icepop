@@ -34,6 +34,7 @@ export default function NewsBanner() {
       <video
         className="absolute top-0 w-screen h-auto"
         autoPlay={"autoplay"}
+        playsInline
         muted
         loop
         height={640}
