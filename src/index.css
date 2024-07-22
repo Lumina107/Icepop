@@ -12,12 +12,12 @@ body {
   font-family: "Indie Flower";
   margin: 0;
   padding: 0;
-  background: rgb(115, 239, 223);
+  /* background: rgb(115, 239, 223);
   background: linear-gradient(
     180deg,
     rgba(115, 239, 223, 1) 0%,
     rgba(153, 89, 186, 1) 10%
-  );
+  ); */
 }
 
 .content_text {
@@ -40,4 +40,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.preloader {
+  @apply fixed z-50 inset-0 h-screen w-screen bg-[#57265b] flex items-center justify-center;
 }

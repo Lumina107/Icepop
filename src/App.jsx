@@ -9,6 +9,7 @@ import NewsBanner from "./components/NewsBanner";
 import Tokenomics from "./components/Tokenomics";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
+import Preloader from "./Preloader";
 
 function App() {
   useEffect(() => {
@@ -16,10 +17,11 @@ function App() {
       duration: 1000,
       anchorPlacement: "bottom-bottom",
     });
-    Aos.refresh();
   }, []);
+
   return (
     <>
+      <Preloader />
       <Navbar />
       <main className="w-screen overflow-hidden">
         <Banner />

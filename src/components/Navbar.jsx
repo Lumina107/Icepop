@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="absolute top-0 pt-5 px-10 lg:px-16 inset-x-0 z-50">
+    <header className="absolute top-0 pt-5 px-10 lg:px-16 inset-x-0 z-40">
       <nav>
         <div
           className={`fixed h-screen ${

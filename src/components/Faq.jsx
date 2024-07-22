@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Footer_tweet from "./../assets/images/tweet_footer.png";
 import Faqs from "./../assets/images/faq.png";
 import Accoridion from "./Accoridion";
 import Icepop from "./../assets/images/tweet_profile.png";
-import { FaTelegramPlane, FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Footer_video from "./../assets/logo.mp4";
+import ReactPlayer from "react-player";
 
 export default function Faq() {
   const [open, setOpen] = useState(999);
@@ -13,12 +13,27 @@ export default function Faq() {
       id="faq"
       className="relative pt-7 -mt-2 bg-white flex flex-col items-center"
     >
-      <div className="container px-10 flex flex-wrap-reverse lg:flex-nowrap gap-10 justify-center lg:justify-between items-center">
-        <img
-          src={Footer_tweet}
-          alt="Faq Tweet Profile"
-          className="h-[300px] md:h-[400px] lg:h-[500px] shrink-0 w-auto"
-        />
+      <div className="container px-10 flex flex-wrap-reverse lg:flex-nowrap gap-10 justify-center items-center">
+        <div className="relative bg-[#9959BA] h-64 w-64 rounded-full overflow-hidden lg:mr-[140px] xl:mr-[200px] shrink-0">
+          <ReactPlayer
+            url={Footer_video}
+            controls={false}
+            playing={true}
+            muted={true}
+            loop={true}
+            onReady={() => {
+              playing: true;
+            }}
+            style={{
+              position: "absolute",
+              height: "480px",
+              width: "640px",
+              left: "-150px",
+              top: 0,
+            }}
+          />
+        </div>
+
         <div className="flex flex-col lg:flex-row items-center max-w-xl w-full relative z-20">
           <div className="relative lg:absolute left-0 lg:-left-[220px] xl:-left-[280px] rotate-[80deg] lg:rotate-0">
             <img
@@ -54,7 +69,7 @@ export default function Faq() {
           </div>
         </div>
       </div>
-      <div className="relative py-10 w-full flex flex-col items-center justify-center bg-[#9959BA] -mt-12 md:-mt-16 lg:-mt-20 z-10">
+      <div className="relative py-10 w-full flex flex-col items-center justify-center bg-[#9959BA] mt-10 z-10">
         <img src={Icepop} alt="ICEPOP" className="h-14 w-auto" />
         <div className="flex items-center gap-5 mt-4">
           <a
