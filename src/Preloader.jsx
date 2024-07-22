@@ -14,6 +14,7 @@ export default function Preloader() {
       setLoading(false);
     }, 4000);
   }, []);
+
   return (
     <section className={`${loading ? "preloader" : "hidden"}`}>
       {/* <ReactPlayer
@@ -27,7 +28,14 @@ export default function Preloader() {
         }}
       /> */}
 
-      <video autoPlay muted loop height={640} width={320}>
+      <video
+        autoPlay={"autoplay"}
+        playsInline
+        muted
+        loop
+        height={640}
+        width={320}
+      >
         <source src={Preload} type="video/mp4" />
       </video>
     </section>
