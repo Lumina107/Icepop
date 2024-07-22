@@ -21,7 +21,7 @@ export default function Carousel() {
       <Slider {...settings}>
         {[...new Array(9).keys()].map((_, index) => (
           <div
-            className="h-8 lg:h-10 w-28 flex items-center justify-center mx-10"
+            className="h-8 lg:h-10 w-28 flex items-center justify-center mx-8"
             key={index}
           >
             <img
