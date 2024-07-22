@@ -3,18 +3,17 @@ import ReactPlayer from "react-player";
 import Preload from "./assets/preloader.mp4";
 
 export default function Preloader() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     window.onload = () => {
       window.scrollTo(0, 0);
-      const preloader = document.querySelector(".preloader");
-      setTimeout(() => {
-        preloader.remove();
-        setLoading(false);
-      }, 2000);
+      setLoading(true);
     };
-  },[]);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
   return (
     <section className={`${loading ? "preloader" : "hidden"}`}>
       <ReactPlayer
