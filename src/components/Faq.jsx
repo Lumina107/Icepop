@@ -60,7 +60,7 @@ export default function Faq() {
                 key={idx}
                 className={`transition-all ease-in-out ${
                   open === idx
-                    ? "bg-[#9959ba] p-2 border-[6px] border-black h-44"
+                    ? "bg-[#9959ba] p-2 border-[6px] border-black h-48"
                     : "h-14"
                 } duration-500 rounded-3xl flex items-start`}
                 onClick={() => {
