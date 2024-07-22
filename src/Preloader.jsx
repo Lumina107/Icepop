@@ -9,7 +9,7 @@ export default function Preloader() {
       const preloader = document.querySelector(".preloader");
       setTimeout(() => {
         preloader.remove();
-      }, 4000);
+      }, 2000);
     };
   });
   return (
