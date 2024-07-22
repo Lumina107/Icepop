@@ -17,8 +17,6 @@ export default function Faq() {
         <div className="relative bg-[#9959BA] h-64 w-64 rounded-full overflow-hidden lg:mr-[140px] xl:mr-[200px] shrink-0">
           <ReactPlayer
             url={Footer_video}
-            controls={false}
-            playing={true}
             muted={true}
             loop={true}
             onReady={() => {
