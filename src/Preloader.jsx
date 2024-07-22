@@ -14,7 +14,7 @@ export default function Preloader() {
         setLoading(false);
       }, 2000);
     };
-  });
+  },[]);
   return (
     <section className={`${loading ? "preloader" : "hidden"}`}>
       <ReactPlayer
