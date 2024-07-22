@@ -9,7 +9,7 @@ export default function Tokenomics() {
   return (
     <section
       id="token"
-      className="flex items-center justify-center pb-20 pt-10 -mt-2 bg-white"
+      className="flex items-center justify-center pb-20 pt-10 -mt-2 bg-[#73EFDF]"
     >
       <div className="container px-6 md:px-16 lg:px-20">
         <img

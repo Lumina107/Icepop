@@ -13,8 +13,8 @@ export default function Faq() {
       id="faq"
       className="relative pt-7 -mt-2 bg-white flex flex-col items-center"
     >
-      <div className="container px-10 flex flex-wrap lg:flex-nowrap gap-10 justify-center items-center">
-        <div className="relative bg-[#9959BA] h-64 w-64 rounded-full overflow-hidden lg:mr-[140px] xl:mr-[200px] shrink-0">
+      <div className="container px-10 flex flex-col gap-10 justify-center items-center">
+        <div className="relative bg-[#9959BA] h-64 w-64 rounded-full overflow-hidden shrink-0">
           {/* <ReactPlayer
             url={Footer_video}
             controls={false}
@@ -46,7 +46,7 @@ export default function Faq() {
           </video>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center max-w-xl w-full relative z-20">
+        <div className="flex flex-col lg:flex-row items-center max-w-xl w-full relative z-20 justify-center">
           <div className="relative lg:absolute left-0 lg:-left-[220px] xl:-left-[280px] rotate-[80deg] lg:rotate-0">
             <img
               src={Faqs}
