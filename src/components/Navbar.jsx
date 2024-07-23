@@ -74,7 +74,7 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center gap-5">
               <a
-                href="/"
+                href="https://t.co/yW4dBOeUpA?ssr=true"
                 className="text-2xl text-black hover:text-[#9959BA] transition-colors ease-in-out duration-300"
               >
                 <FaTelegramPlane />
@@ -86,7 +86,7 @@ const Navbar = () => {
                 <FaDiscord />
               </a>
               <a
-                href="https://t.co/yW4dBOeUpA?ssr=true"
+                href="https://x.com/icepopcoin?s=11"
                 className="text-2xl text-black hover:text-[#9959BA] transition-colors ease-in-out duration-300"
               >
                 <FaXTwitter />

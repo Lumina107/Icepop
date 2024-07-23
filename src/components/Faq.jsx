@@ -58,7 +58,7 @@ export default function Faq() {
             <FaXTwitter />
           </a>
           <a
-            href="https://t.co/yW4dBOeUpA?ssr=true"
+            href="https://discord.gg/luminaweb3"
             className="text-3xl text-white hover:text-[#73EFDF] transition-colors ease-in-out duration-300"
           >
             <FaDiscord />
