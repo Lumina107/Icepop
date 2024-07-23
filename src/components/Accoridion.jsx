@@ -25,7 +25,7 @@ export default function Accoridion(props) {
           props.true ? "opacity-100" : "opacity-0"
         } ease-in-out duration-500`}
       >
-        <p className="text-white text-stroked text-lg text-left">
+        <p className="text-white text-stroked text-lg text-left max-w-md">
           {props.answer}
         </p>
       </div>

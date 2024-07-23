@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import Logo from "./../assets/icons/logo.png";
 import { FaTelegramPlane, FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Logo_video from "./../assets/logo.mp4";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(true);
@@ -21,7 +22,17 @@ const Navbar = () => {
         />
         <div className="flex items-center justify-between ">
           <div className="shrink-0">
-            <img className="h-14 md:h-16 lg:h-20" src={Logo} alt="Logo" />
+            <div className="relative bg-[#9959BA] h-14 md:h-16 lg:h-20 w-14 md:w-16 lg:w-20 rounded-full overflow-hidden shrink-0">
+              <video
+                className="absolute"
+                autoPlay={"autoplay"}
+                playsInline
+                muted
+                loop
+              >
+                <source src={Logo_video} type="video/mp4" />
+              </video>
+            </div>
           </div>
           {clicked ? (
             <div

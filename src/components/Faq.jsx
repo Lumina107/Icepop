@@ -3,55 +3,21 @@ import Faqs from "./../assets/images/faq.png";
 import Accoridion from "./Accoridion";
 import Icepop from "./../assets/images/tweet_profile.png";
 import { FaXTwitter } from "react-icons/fa6";
-import Footer_video from "./../assets/logo.mp4";
-import ReactPlayer from "react-player";
 
 export default function Faq() {
   const [open, setOpen] = useState(999);
   return (
     <section
       id="faq"
-      className="relative pt-7 -mt-2 bg-white flex flex-col items-center"
+      className="relative pt-7 -mt-2 bg-[#73EFDF] flex flex-col items-center"
     >
       <div className="container px-10 flex flex-col gap-10 justify-center items-center">
-        <div className="relative bg-[#9959BA] h-64 w-64 rounded-full overflow-hidden shrink-0">
-          {/* <ReactPlayer
-            url={Footer_video}
-            controls={false}
-            playing={true}
-            muted={true}
-            loop={true}
-            onReady={() => {
-              playing: true;
-            }}
-            style={{
-              position: "absolute",
-              height: "480px",
-              width: "640px",
-              left: "-150px",
-              top: 0,
-            }}
-          /> */}
-
-          <video
-            className="absolute"
-            autoPlay={"autoplay"}
-            playsInline
-            muted
-            loop
-            height={640}
-            width={320}
-          >
-            <source src={Footer_video} type="video/mp4" />
-          </video>
-        </div>
-
-        <div className="flex flex-col lg:flex-row items-center max-w-xl w-full relative z-20 justify-center">
-          <div className="relative lg:absolute left-0 lg:-left-[220px] xl:-left-[280px] rotate-[80deg] lg:rotate-0">
+        <div className="flex flex-col lg:flex-row items-center max-w-3xl w-full relative z-20 justify-center">
+          <div className="relative rotate-[80deg] lg:rotate-0">
             <img
               src={Faqs}
               alt="FAQ"
-              className="w-40 md:w-64 shrink-0 lg:w-[300px] xl:w-[350px] h-auto "
+              className="w-40 md:w-64 shrink-0 lg:w-[400px] xl:w-[450px] h-auto "
             />
           </div>
           <div className=" w-full gap-2 flex flex-col">
@@ -107,12 +73,12 @@ const Questions = [
       " $ICEPOP is built by the Tier-1 marketing firm Lumina, Founded by Rhys Mckay who also is the co-founder of Basebet.",
   },
   {
-    question: "How can I buy $ICEPOP",
+    question: "How can I buy $ICEPOP?",
     answer:
       "You can participate in our presale. Post launch you will be able to buy via different CEXs & DEXs.",
   },
   {
-    question: "Wen launch",
+    question: "Wen launch?",
     answer: "July 2024.",
   },
 ];
