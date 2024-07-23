@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Faqs from "./../assets/images/faq.png";
 import Accoridion from "./Accoridion";
 import Icepop from "./../assets/images/tweet_profile.png";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaDiscord, FaXTwitter } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
 
 export default function Faq() {
   const [open, setOpen] = useState(999);
@@ -55,6 +56,18 @@ export default function Faq() {
             className="text-3xl text-white hover:text-[#73EFDF] transition-colors ease-in-out duration-300"
           >
             <FaXTwitter />
+          </a>
+          <a
+            href="https://t.co/yW4dBOeUpA?ssr=true"
+            className="text-3xl text-white hover:text-[#73EFDF] transition-colors ease-in-out duration-300"
+          >
+            <FaDiscord />
+          </a>
+          <a
+            href="https://t.co/yW4dBOeUpA?ssr=true"
+            className="text-3xl text-white hover:text-[#73EFDF] transition-colors ease-in-out duration-300"
+          >
+            <FaTelegramPlane />
           </a>
         </div>
       </div>

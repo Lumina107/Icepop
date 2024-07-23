@@ -80,13 +80,13 @@ const Navbar = () => {
                 <FaTelegramPlane />
               </a>
               <a
-                href="/"
+                href="https://discord.gg/luminaweb3"
                 className="text-2xl text-black hover:text-[#9959BA] transition-colors ease-in-out duration-300"
               >
                 <FaDiscord />
               </a>
               <a
-                href="/"
+                href="https://t.co/yW4dBOeUpA?ssr=true"
                 className="text-2xl text-black hover:text-[#9959BA] transition-colors ease-in-out duration-300"
               >
                 <FaXTwitter />
