@@ -6,11 +6,12 @@ export default function Preloader() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-      window.scrollTo(0, 0);
-      setLoading(true);
+    window.scrollTo(0, 0);
+    setLoading(true);
+
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 2500);
   }, []);
 
   return (
@@ -26,14 +27,7 @@ export default function Preloader() {
         }}
       /> */}
 
-      <video
-        autoPlay={"autoplay"}
-        playsInline
-        muted
-        loop
-        height={640}
-        width={320}
-      >
+      <video autoPlay={"autoplay"} playsInline muted height={640} width={320}>
         <source src={Preload} type="video/mp4" />
       </video>
     </section>
