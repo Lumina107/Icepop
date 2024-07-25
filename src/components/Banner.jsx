@@ -4,7 +4,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Banner() {
-  const Value = "when";
+  const Value = "D1AGWBJoD7oSSaUAgtFm5fRJPhZyJmqW8KSZp666jwJK";
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
