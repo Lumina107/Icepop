@@ -4,7 +4,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Banner() {
-  const Value = "WEN?";
+  const Value = "when";
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -47,9 +47,9 @@ export default function Banner() {
             onCopy={() => setCopied(true)}
           >
             <span>
-              <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-12 md:px-20 bg-[#9959BA] relative">
+              <div className="h-12 md:h-16 cursor-pointer lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-12 md:px-20 bg-[#9959BA] relative">
                 <p className="text-xs md:text-lg lg:text-[25px] text-white text-stroked">
-                  {'CA: 'Value}
+                  {`CA:` + " " + Value}
                 </p>
               </div>
               <div className="absolute h-full w-full top-1 left-0.5 border-4 border-black rounded-full bg-black" />
