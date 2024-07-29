@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Buy from "./../assets/images/buy-icepop.png";
-import Tree from "./../assets/images/tree.png";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 export default function BuyPop() {
+  const Value = "EARU2uBoYSSvrsz4Q215HpFX5mpAF2hze11tK44WPCjX";
+
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    if (copied) {
+      setTimeout(() => {
+        setCopied(false);
+      }, "2000");
+    }
+  });
+
   return (
     <section
       id="buy"
@@ -23,13 +35,47 @@ export default function BuyPop() {
             <br className="hidden lg:block" />
             will be avaliable on:
           </p>
-          <div className="flex justify-center items-center">
-            <img
-              src={Tree}
-              className="w-auto h-24 md:h-52 lg:h-[300px] shrink-0"
-              alt="Presale"
-            />
+          <div className="flex flex-col justify-center items-center gap-7">
+            <div data-aos="fade-up" data-aos-delay="200" className="relative">
+              <div className="h-12 md:h-16 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-9 bg-[#9959BA] relative">
+                <p className="text-xs md:text-lg lg:text-[25px] text-white font-bold">
+                  LIve now
+                </p>
+              </div>
+              <div className="absolute h-full w-full top-1 left-0.5 border-4 border-black rounded-full bg-black" />
+            </div>
+            <CopyToClipboard
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="relative hover:scale-90"
+              text={Value}
+              onCopy={() => setCopied(true)}
+            >
+              <span>
+                <div className="h-12 md:h-16 cursor-pointer lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-12 md:px-20 bg-[#9959BA] relative">
+                  <p className="text-xs md:text-lg lg:text-[25px] text-white text-stroked">
+                    {`CA:` + " " + Value}
+                  </p>
+                </div>
+                <div className="absolute h-full w-full top-1 left-0.5 border-4 border-black rounded-full bg-black" />
+              </span>
+            </CopyToClipboard>
           </div>
+        </div>
+      </div>
+
+      <div
+        className={`fixed bottom-5 transition-transform ${
+          copied ? "translate-y-0" : "translate-y-[50vh]"
+        } z-40 ease-in-out duration-500`}
+      >
+        <div className="relative">
+          <div className="h-12 lg:h-20 z-20 rounded-full border-4 border-black flex flex-row items-center justify-center px-14 bg-[#9959BA] relative">
+            <p className="text-xs md:text-lg lg:text-[25px] text-white font-bold">
+              COPIED
+            </p>
+          </div>
+          <div className="absolute h-full w-full top-1 left-0.5 border-4 border-black rounded-full bg-black" />
         </div>
       </div>
     </section>

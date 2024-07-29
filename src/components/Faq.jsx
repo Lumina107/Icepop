@@ -81,11 +81,6 @@ const Questions = [
     answer: "$ICEPOP is on Solana (SOL)",
   },
   {
-    question: "Who is the Team?",
-    answer:
-      " $ICEPOP is built by the Tier-1 marketing firm Lumina, Founded by Rhys Mckay who also is the co-founder of Basebet.",
-  },
-  {
     question: "How can I buy $ICEPOP?",
     answer:
       "You can participate in our presale. Post launch you will be able to buy via different CEXs & DEXs.",
